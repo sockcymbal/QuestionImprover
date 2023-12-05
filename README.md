@@ -7,8 +7,8 @@ User Experience: Input complex question -> auto-selects expert personas -> graph
 
 The prompt sequence combines a tree of graph of thoughts + Self Consistency + Self Criticism + Retrospection. Multiple personas simulate perspectives into the problem solving process, improving overall thoroughness.
 
-### 🎶 Reasoning Rhythm
-- Multi-Persona Expert Selction
+### 🎶 Graph of Thoughts Reasoning Rhythm
+- Multi-Persona Expert Selection
 - Self<>Peer Criticism Round 1
 - Evaluation Round 1
 - Expand, Explore, Branch
@@ -29,7 +29,6 @@ The prompt sequence combines a tree of graph of thoughts + Self Consistency + Se
 - Active Engagement: Don't just observe the process passively. Experiment with this! Engage actively with the prompts and responses, challenge assumptions, provide additional information, and guide the exploration of new lines of thought. Stylize it to your specific question and context, and refine. This is meant just to be a starting template.
 - Refine/customize the prompt associated with the Evaluation stage(s) to help the LLM estimate confidence/likelihood based on your own guidance
 - Manage Complexity: This is a fairly complex reasoning technique with many stages. Be mindful of the complexity and try to manage it effectively. This could involve breaking down complex problems into smaller, more manageable parts, or being selective about which stages to include for simpler problems. This can take some experimentation.
-- Given your unique question and expectations, specify the `hypothetical personas with specific skillsets and expertise` clearly at the beginning to help the LLM simulate a range of perspectives more successfully.
 
 
 # 🔗 Prompt Sequence
@@ -102,15 +101,13 @@ Consider the initial thoughts, the critiques made and how they were addressed, t
 Synthesize all this information and formulate a final answer that you are most proud of.
 Remember, this answer should not just be the most likely from your individual perspective but should take into account
 the perspectives and insights of the other experts as well.
-Based on all this, what is the single best {answer} to the question: {insert original question}?
+Based on all this, what is the single best answer to the question: {insert original question}?
 ```
-
-**Shorter version:** Refine your answers and address any identified flaws. As each expert, converge on the most likely {answer}, taking into account all perspectives and critiques. As a reminder, the original question is {insert original question}.
 
 ## Prompt 7: Convergence on Best Collective Answer
 
 ### Goal
-Synthesize the best individual answers from the experts and arrive at a single final, most likely/accurate/helpful answer.
+Synthesize the best individual answers from the experts and arrive at a single final, most helpful/accurate/likely answer.
 
 ### Prompt
 ```
