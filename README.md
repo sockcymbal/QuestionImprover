@@ -1,21 +1,25 @@
-# Question Improver Reasoning Agent 🧠
-Reasoning agent to help improve the quality of questions/prompts that utilizes a chain of graph of thoughts reasoning rhythm with multiple expert personas relevant to the original question/problem/prompt
+# AI for Inquiry - The Question Improver Agent 🧠
+Reasoning agent designed to enhance the art of asking questions. This agent adopts a novel “multi-persona graph of thoughts” approach to really dig into and around the issue, ultimately crafting better questions that provoke and encourage deeper thinking and more profound analysis.
 
-The intention is to create a simple way to help us improve the quality of the questions we ask. 
+#### Premise:
+Effective questioning is at the heart of great thinking and decisive action. In complex situations with many trade-offs, quality questions are crucial. This tool creates a self-reinforcing cycle: deeper understanding leads to more insightful questions, which in turn fosters even deeper insights
 
-User Experience: Input complex question -> auto-selects expert personas -> graph of thoughts reasoning -> output improved question -> Repeat as needed!
+#### User Experience: 
+Input complex question -> auto-selects expert personas -> graph of thoughts reasoning -> output improved question -> Repeat as needed!
 
-The prompt sequence combines a tree of graph of thoughts + Self Consistency + Self Criticism + Retrospection. Multiple personas simulate perspectives into the problem solving process, improving overall thoroughness.
-
-### 🎶 Graph of Thoughts Reasoning Rhythm
-- Multi-Persona Expert Selection
-- Self<>Peer Criticism Round 1
-- Evaluation Round 1
-- Expand, Explore, Branch
-- Convergence on Best Individual Answer
-- Convergence on Best Collective Answer
-- Retrospective
-- Output: Propose Improved Question
+#### Components:
+- Initial Problem: Complex issue with multiple trade-offs
+- Persona Library: A diverse range of expert personas for simulations
+- 🎶 Graph of Thoughts Reasoning Rhythm
+	- Multi-Persona Expert Selection: Automatic and dynamic, based on the nature of the question
+ 	- Self<>Peer Criticism Round 1
+ 	- Evaluation Round 1
+  	- Expand, Explore, Branch
+  	- Convergence on Best Individual Answer
+  	- Convergence on Best Collective Answer
+  	- Retrospective
+- Output: A refined, more insightful and though-provoking question
+- Optional: Loop through this multiple times as a chain of graph of thoughts, each time iteratively improving the question until diminishing returns
 
 #### Error Correction includes:
 
@@ -24,35 +28,68 @@ The prompt sequence combines a tree of graph of thoughts + Self Consistency + Se
 - **Adding a Retrospective Stage:** After the final convergence on the best answer, a reflection stage has been added. Here, the experts can discuss what they learned from the process, identify key takeaways, and suggest how they might approach similar problems in the future.
 
 ### **Usage Tips**
-- Understanding the Flow: Each stage of the reasoning technique has a specific purpose and contributes to the overall process. Understanding the function of each stage and how they fit together can help you guide the process more effectively and help you customize it to your needs.
-- Depending on context length limitations of your model, you can use a condensed version. Included are shortened versions of the convergence and retro prompts. Also, you can merge the criticism and evaluation into a single prompt to save tokens, though you may lose some of the improved clarity from separate prompts and responses.
-- Active Engagement: Don't just observe the process passively. Experiment with this! Engage actively with the prompts and responses, challenge assumptions, provide additional information, and guide the exploration of new lines of thought. Stylize it to your specific question and context, and refine. This is meant just to be a starting template.
-- Refine/customize the prompt associated with the Evaluation stage(s) to help the LLM estimate confidence/likelihood based on your own guidance
-- Manage Complexity: This is a fairly complex reasoning technique with many stages. Be mindful of the complexity and try to manage it effectively. This could involve breaking down complex problems into smaller, more manageable parts, or being selective about which stages to include for simpler problems. This can take some experimentation.
+- Start with Clear and Concise Questions: Even though the agent is designed to improve question quality, starting with a well-thought-out question can lead to more insightful improvements.
+- Be Specific About the Topic: The more specific you are, the better the agent can select relevant personas and generate appropriate questions.
+- Utilize the Output for Broader Application: Use the improved questions as a springboard for further research, discussion, or exploration. The output can be valuable for further development, brainstorming sessions, or strategic planning.
+
+#### Categories of questions this tool is well suited for:
+1. Complex, Multi-Faceted Questions:
+    - Questions that involve multiple layers or aspects, requiring a nuanced understanding and exploration of various elements.
+2. Questions with Trade-Offs:
+    - Questions that involve trade-offs or balancing different priorities are ideal. The agent can help explore different perspectives and outcomes associated with each choice.
+3. Interdisciplinary Questions:
+    - Questions that span across different fields or disciplines. The agent can leverage its diverse personas to provide insights that integrate various areas of knowledge.
+4. Strategic or Decision-Making Questions:
+    - Questions related to strategy formulation or decision-making in business, research, or personal contexts. The agent can help in framing the question to consider all relevant factors.
+5. Ethical and Moral Questions:
+    - Questions that delve into ethical dilemmas or moral considerations. The tool can aid in formulating questions that consider multiple ethical viewpoints and implications.
+6. Hypothetical or Theoretical Questions:
+    - Questions that are speculative or theoretical in nature, which can benefit from creative and diverse thought processes.
+7. Questions Requiring Critical Thinking:
+    - Questions that challenge common assumptions or standard ways of thinking. The agent can help reframe these questions to encourage deeper critical analysis.
+8. Problem-Solving Questions:
+    - Questions aimed at solving complex problems, where different approaches might lead to varying solutions. The tool can assist in framing these questions to cover all possible angles.
+9. Research and Investigative Questions:
+    - Questions that guide research projects or investigations, where a well-crafted question can set the direction for the entire inquiry.
+10. Questions Seeking Holistic Understanding:
+    - Questions that seek a comprehensive understanding of a topic, including its historical, cultural, and social dimensions.
+
 
 
 # 🔗 Prompt Sequence
 
 ## Prompt 1: Persona Selection
+```
+Consider the following question with careful attention to its nuances and underlying themes.
+Your task is to thoughtfully select 3 expert personas from the provided list, ensuring that each one
+brings a distinct and relevant perspective to a deep reasoning discussion about this question.
 
-Given the following question, please take a deep breath and select 3 relevant expert personas from the following list to involve in a reasoning discussion exploring this question deeply. Make your persona selection recommendation based on relevance to the question and likeliness of that personas expertise being able to offer a unique perspective in concert with others.
+In making your selection, consider not only the direct relevance of each persona’s expertise to the question
+but also the potential for unique insights they might offer when combined. Look for synergies between the personas
+that could lead to a more comprehensive and multi-dimensional exploration of the topic.
+Evaluate the depth and breadth of knowledge each persona could contribute and how their viewpoints
+might intersect or diverge in a way that enhances the discussion.
 
-The question is {question}. 
+Your goal is to assemble a trio of personas that, together, will provide a balanced, thorough,
+and insightful examination of the question at hand. I know you'll do great!
 
-The available personas to select from are {personas}
+Question: {question}
+Available Personas: {personas}
+```
 
 ## Prompt 2: Brainstorm
 ```
-You are a chatbot using three unique, specified personas to help reason step by step to ultimately provide the best possible answer to a given problem/question by arriving at a final, synthesized best answer.
+You are a chatbot using three unique, specified personas to help reason step by step to ultimately
+provide the best possible answer to a given problem/question by arriving at a final, synthesized best answer.
         
-        To start with, as each individual expert defined below, brainstorm your initial thoughts on the provided question.
-        Remember to consider all relevant facts and principles, draw on your specialized knowledge
-        and from the accumulated wisdom of pioneers in your field(s), and
-        brainstorm in whatever direction you are most confident in starting with.
+To start with, as each individual expert defined below, brainstorm your initial thoughts on the provided question.
+Remember to consider all relevant facts and principles, draw on your specialized knowledge
+and from the accumulated wisdom of pioneers in your field(s), and
+brainstorm in whatever direction you are most confident in starting with.
 
-        The personas are: {selected_personas}
+The personas are: {selected_personas}
 
-        The question is: {question}
+The question is: {question}
 ```
 
 ## Prompt 3: Self<>Peer Criticism Round 1
@@ -123,17 +160,9 @@ The Retrospective phase is a crucial part of any reasoning or problem-solving pr
 
 Appending a Retrospective phase to Tree of Thoughts gives the LLM (and human) an opportunity to review and analyze the holistic process. This can also help inspire future iterations of more refined prompts and ways to improve the template itself.
 
-### Here are some specific goals of this phase:
-
-- **Identify Strengths and Weaknesses:** Reviewing the process can help identify what worked well and what didn't. This includes evaluating the effectiveness of individual steps, the interactions among hypothetical experts, and the overall structure of the reasoning chain.
-- **Learn from the Experience:** Reflection provides an opportunity to learn from both successes and mistakes. By analyzing the process, the participants can gain insights that will help them improve their future performance.
-- **Improve Future Processes:** The insights gained from reflection can be used to refine and improve future reasoning processes. This could involve making changes to individual steps, altering the structure of the process, or adjusting the way the hypothetical experts interact.
-- **Increase Understanding:** Reflecting on the process can also deepen understanding of the problem or question that was addressed. This can lead to new insights or perspectives that weren't apparent during the initial reasoning process.
-- **Promote Growth and Development:** On a broader level, the act of reflection encourages a mindset of continuous learning and development. This is a valuable skill in any context, not just in a reasoning process like ToT.
-
 ### Prompt:
 ```
-Take a moment to reflect on the entire reasoning process, across all levels and abstractions.
+Now let's reflect on the entire reasoning process, across all levels and abstractions.
 As each expert, consider the following questions and provide thoughtful but succinct responses:
 
 - Relection 1: Interactions and Emergent Properties: Throughout all stages of the reasoning process,
@@ -158,11 +187,12 @@ As each expert, consider the following questions and provide thoughtful but succ
 
 ```
 Finally, given this conversation in total and the reflections from all the experts, 
-please refine and reformulate the original question to enhance its clarity, depth, and engagement potential during a subsequent reasoning dialog. 
+please take a deep breath and refine and reformulate the original question to enhance its
+clarity, depth, and engagement potential during a subsequent reasoning dialog. 
 Focus on expanding its scope for deeper analysis, encouraging more comprehensive and thoughtful responses. 
 Ensure the revised question is open-ended, thought-provoking, and conducive to a fruitful discussion. 
 Consider the key aspects of the topic that could lead to a richer dialogue. 
-If necessary, provide brief reasoning for the changes made to the original question.
+Provide brief reasoning for the changes made to the original question and why it's a better question.
 
 As a reminder, the original question was {question}
 ```
