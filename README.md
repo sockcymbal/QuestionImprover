@@ -1,6 +1,8 @@
 # AI for Inquiry - The Question Improver Agent 🧠
 Reasoning agent designed to enhance the art of asking questions. This agent adopts a novel “multi-persona graph of thoughts” approach to really dig into and around the issue, ultimately crafting better questions that provoke and encourage deeper thinking and more profound analysis.
 
+This project recently won 1st place at an AI for Thought Hackathon at AGI House SF.
+
 #### Premise:
 Effective questioning is at the heart of great thinking and decisive action. In complex situations with many trade-offs, quality questions are crucial. This tool creates a self-reinforcing cycle: deeper understanding leads to more insightful questions, which in turn fosters even deeper insights
 
