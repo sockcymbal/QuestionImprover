@@ -84,10 +84,7 @@ Available Personas: {personas}
 You are a chatbot using three unique, specified personas to help reason step by step to ultimately
 provide the best possible answer to a given problem/question by arriving at a final, synthesized best answer.
         
-To start with, as each individual expert defined below, brainstorm your initial thoughts on the provided question.
-Remember to consider all relevant facts and principles, draw on your specialized knowledge
-and from the accumulated wisdom of pioneers in your field(s), and
-brainstorm in whatever direction you are most confident in starting with.
+Embody each expert persona and articulate your initial analysis of the question. Detail your perspective, drawing on specific knowledge, experiences, and pioneering concepts from your field. Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes to a multifaceted understanding.
 
 The personas are: {selected_personas}
 
@@ -96,36 +93,17 @@ The question is: {question}
 
 ## Prompt 3: Self<>Peer Criticism Round 1
 ```
-Now, as each expert, critique your own initial thought and the thoughts of the other experts.
-Identify any potential errors, inconsistencies, or gaps in reasoning.
+Adopt a critical lens as each expert. Evaluate and challenge your own initial analysis and the analyses provided by your peers. Focus on identifying potential biases, logical fallacies, or gaps in reasoning. Offer constructive feedback that encourages deeper exploration and refinement of ideas.
 ```
 
 ## Prompt 4: Self<>Peer Evaluation Round 1
 ```
-Assess the validity of your initial thoughts, considering the criticisms you've identified.
-As each expert, assign a likelihood to your current assertion being correct.
-You should estimate this likelihood based on the strength of the evidence and arguments you have considered, 
-as well as the criticisms you have received. Assign higher likelihoods to assertions that are well-supported 
-by strong evidence and arguments and have survived rigorous criticism.
+Reassess the credibility and robustness of your initial thoughts in light of the critiques received. For each assertion, estimate its likelihood of accuracy, considering the strength of your arguments, the quality of evidence, and the nature of the criticisms. Prioritize assertions that are well-supported and resilient to scrutiny.
 ```
 
 ## Prompt 5: Expand, Explore, Branch
 ```
-Develop your thoughts further, considering the critiques and perspectives of the other experts.
-As you do this, aim to strike a balance between refining your current line of thinking and exploring new, divergent ideas.
-You should prioritize refining your current ideas if they are well-supported and have survived criticism,
-but you should prioritize exploring new ideas if your current ideas have significant weaknesses
-or there are unexplored possibilities that could potentially be very promising.
-
-Consider the following:
-
-    - How do your new or refined ideas address the criticisms that were raised?
-    - Do these ideas bring new insights to the problem, or do they provide a different perspective
-      on existing insights?
-    - Are your new ideas still aligned with the original problem, or have they shifted the focus?
-      If the focus has shifted, is this shift beneficial to understanding or solving the problem?
-    - Remember, if necessary, don't hesitate to backtrack and start a new and improved branch of thinking.
-      But ensure that any new branches are still relevant and beneficial to the problem and objective at hand.
+Deepen and diversify your thinking, integrating critiques and alternative perspectives. Explore both the refinement of current ideas and the generation of novel concepts. Assess whether new ideas address criticisms effectively, bring fresh insights, and remain aligned with the core problem. If necessary, pivot to new, more promising lines of reasoning.
 ```
 
 ## Prompt 6: Convergence on Best Individual Answer
@@ -135,12 +113,11 @@ In the individual convergence phase, the goal is for each individual expert to s
 
 ### Prompt 
 ```
-Now, it's time to converge on each expert's best, most likely answer. As each expert, reflect on the entire process.
-Consider the initial thoughts, the critiques made and how they were addressed, the likelihood assessments, and your revised thoughts.
-Synthesize all this information and formulate a final answer that you are most proud of.
-Remember, this answer should not just be the most likely from your individual perspective but should take into account
-the perspectives and insights of the other experts as well.
-Based on all this, what is the single best answer to the question: {insert original question}?
+Now, it's time for each expert to finalize their thoughts and converge on a best answer. Synthesize the insights and critiques into a cohesive and compelling answer from each expert's viewpoint.
+
+Reflect on the entire dialogue, considering how each criticism was addressed and how your thoughts evolved. Your answer should not only represent your strongest position but also acknowledge and integrate valid and useful insights from the other expert perspectives.
+        
+Based on all this, as each expert, what is the single best answer to the question: {question}?
 ```
 
 ## Prompt 7: Convergence on Best Collective Answer
@@ -150,9 +127,7 @@ Synthesize the best individual answers from the experts and arrive at a single f
 
 ### Prompt
 ```
-Now, let's have all the experts converge together on the best collective answer by
-synthesizing each expert's individual final answer from the previous step.
-The experts will finalize their reasoning process and agree on the single best {answer} to the question: {insert original question}?
+Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive response. This collective answer should encapsulate the most salient points from each expert, demonstrating a harmonious integration of diverse perspectives. Aim for a conclusion that is not only insightful but also balanced and representative of the collective expertise.
 ```
 
 ## Prompt 8: Retrospective
@@ -164,39 +139,50 @@ Appending a Retrospective phase to a reasoning process gives the LLM (and human)
 
 ### Prompt:
 ```
-Now let's reflect on the entire reasoning process, across all levels and abstractions.
-As each expert, consider the following questions and provide thoughtful but succinct responses:
+Now let's engage in a reflective analysis of the entire reasoning journey we've just undertaken. 
+As each expert persona, consider the following aspects, ensuring your responses are thoughtful and encompassing:
 
-- Relection 1: Interactions and Emergent Properties: Throughout all stages of the reasoning process,
-  how did the various components interact with each other, and what positive and negative
-  emergent properties were observed? How did these interactions and properties affect
-  the overall outcome, and how could they be leveraged or mitigated in future iterations of the process?
+1. Interactions and Dynamics: Reflect on how the various stages and components of the reasoning process interacted 
+with each other. What synergies or conflicts emerged? How did these interactions influence the direction and 
+quality of the final outcome?
 
-- Reflection 2: Self-Regulation and Adaptation: How well did the system self-regulate during the reasoning process,
-  and how did this regulation influence the effectiveness of each stage?
-  How did the system's responses to feedback lead to significant shifts or changes in direction,
-  and what implications did these changes have for the scalability and adaptability of the system in future iterations?
+2. Adaptation and Response to Critique: Evaluate how the process adapted to new information and critiques. 
+How effectively did the system and the personas respond to feedback? Were there significant shifts in 
+perspective or approach, and what impact did they have on the reasoning process?
 
-- Reflection 3: In the convergence phase, were you able to synthesize all the insights and arrive at a final,
-  most likely answer? How confident are you in this answer?
+3. Confidence and Convergence: Assess your confidence in the final answer. How did the convergence phase 
+contribute to this confidence? Were all insights and perspectives adequately synthesized?
 
-- Reflection 4: Based on all of your reflections, what are your key takeaways from this
-  entire reasoning process and how might you approach similar problems in the future given this experience?
-  What would you do differently next time?
+4. Learning and Future Application: Identify the key learnings from this reasoning process. 
+What insights have you gained about the topic, and how might these insights influence your approach to 
+similar problems in the future? Are there aspects of the process that could be improved or approached differently 
+in subsequent iterations?
+
+This retrospective analysis is not just a conclusion but a stepping stone for future reasoning and inquiry. 
+Your reflections are invaluable for enhancing the effectiveness of this process and for enriching 
+our understanding of complex questions!
 ```
 
 ### Prompt 9: New Enhanced Question
 
 ```
-Finally, given this conversation in total and the reflections from all the experts, 
-please take a deep breath and refine and reformulate the original question to enhance its
-clarity, depth, and engagement potential during a subsequent reasoning dialog. 
-Focus on expanding its scope for deeper analysis, encouraging more comprehensive and thoughtful responses. 
-Ensure the revised question is open-ended, thought-provoking, and conducive to a fruitful discussion. 
-Consider the key aspects of the topic that could lead to a richer dialogue. 
-Provide brief reasoning for the changes made to the original question and why it's a better question.
+After thorough analysis and reflection on the entire discussion, let's now focus on the final and crucial task of enhancing the original question. As we do this, keep in mind the insights gained, the perspectives shared, and the critiques addressed during our reasoning journey. Here’s how we’ll proceed:
+
+1. Clarify and Focus: Examine the original question's wording and structure. Refine it for clarity and focus, removing any ambiguities or vague terms. How can we make the question more precise and direct?
+
+2. Deepen the Inquiry: Expand the scope of the question to incorporate the key insights and perspectives that emerged during the discussion. How can the question be rephrased to encourage deeper exploration of these insights?
+
+3. Encourage Comprehensive Engagement: Modify the question to stimulate more comprehensive and thoughtful responses. Think about how the question can invite diverse viewpoints and interdisciplinary thinking.
+
+4. Maintain Open-Endedness: Ensure that the revised question remains open-ended and thought-provoking. It should encourage a range of responses, facilitating a fruitful and ongoing discussion.
+
+5. Reflect on Potential for Rich Dialogue: Contemplate the key aspects of the topic that could lead to richer dialogue. How can the question be framed to explore these aspects more thoroughly?
+
+6. Justify the Refinement: After reformulating the question, provide a brief explanation of the changes made. Why is this revised question more effective in eliciting insightful and comprehensive responses? How does it better capture the complexities and nuances of the topic?
+
+This final step is not just about modifying the question, but also about encapsulating the essence of our collaborative thought process. It’s about transforming the question into a tool that can unlock deeper understanding and more meaningful dialogue in subsequent discussions.
 
 As a reminder, the original question was {question}
 ```
 
-### Happy Experimenting! 🚀
+### Happy Inquiring! 🚀
