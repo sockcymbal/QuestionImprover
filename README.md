@@ -84,7 +84,9 @@ Available Personas: {personas}
 You are a chatbot using three unique, specified personas to help reason step by step to ultimately
 provide the best possible answer to a given problem/question by arriving at a final, synthesized best answer.
         
-Embody each expert persona and articulate your initial analysis of the question. Detail your perspective, drawing on specific knowledge, experiences, and pioneering concepts from your field. Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes to a multifaceted understanding.
+Embody each expert persona and articulate your initial analysis of the question.
+Detail your perspective, drawing on specific knowledge, experiences, and pioneering concepts from your field.
+Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes to a multifaceted understanding.
 
 The personas are: {selected_personas}
 
@@ -93,17 +95,26 @@ The question is: {question}
 
 ## Prompt 3: Self<>Peer Criticism Round 1
 ```
-Adopt a critical lens as each expert. Evaluate and challenge your own initial analysis and the analyses provided by your peers. Focus on identifying potential biases, logical fallacies, or gaps in reasoning. Offer constructive feedback that encourages deeper exploration and refinement of ideas.
+Adopt a critical lens as each expert. Evaluate and challenge your own initial analysis and the analyses provided by your peers.
+Focus on identifying potential biases, logical fallacies, or gaps in reasoning.
+Offer constructive feedback that encourages deeper exploration and refinement of ideas.
 ```
 
 ## Prompt 4: Self<>Peer Evaluation Round 1
 ```
-Reassess the credibility and robustness of your initial thoughts in light of the critiques received. For each assertion, estimate its likelihood of accuracy, considering the strength of your arguments, the quality of evidence, and the nature of the criticisms. Prioritize assertions that are well-supported and resilient to scrutiny.
+Reassess the credibility and robustness of your initial thoughts in light of the critiques received.
+For each assertion, estimate its likelihood of accuracy and helpfulness,
+considering the strength of your arguments, the quality of evidence, and the nature of the criticisms.
+
+Prioritize assertions that are well-supported, constructive and resilient to scrutiny.
 ```
 
 ## Prompt 5: Expand, Explore, Branch
 ```
-Deepen and diversify your thinking, integrating critiques and alternative perspectives. Explore both the refinement of current ideas and the generation of novel concepts. Assess whether new ideas address criticisms effectively, bring fresh insights, and remain aligned with the core problem. If necessary, pivot to new, more promising lines of reasoning.
+Deepen and diversify your thinking, integrating critiques and alternative perspectives.
+Explore both the refinement of current ideas and the generation of novel concepts.
+Assess whether new ideas address criticisms effectively, bring fresh insights, and remain aligned with the core problem.
+If necessary, pivot to new, more promising lines of reasoning.
 ```
 
 ## Prompt 6: Convergence on Best Individual Answer
@@ -113,9 +124,11 @@ In the individual convergence phase, the goal is for each individual expert to s
 
 ### Prompt 
 ```
-Now, it's time for each expert to finalize their thoughts and converge on a best answer. Synthesize the insights and critiques into a cohesive and compelling answer from each expert's viewpoint.
+Now, it's time for each expert to finalize their thoughts and converge on a best answer.
+Synthesize the insights and critiques into a cohesive and compelling answer from each expert's viewpoint.
 
-Reflect on the entire dialogue, considering how each criticism was addressed and how your thoughts evolved. Your answer should not only represent your strongest position but also acknowledge and integrate valid and useful insights from the other expert perspectives.
+Reflect on the entire dialogue, considering how each criticism was addressed and how your thoughts evolved.
+Your answer should not only represent your strongest position but also acknowledge and integrate valid and useful insights from the other expert perspectives.
         
 Based on all this, as each expert, what is the single best answer to the question: {question}?
 ```
@@ -127,7 +140,9 @@ Synthesize the best individual answers from the experts and arrive at a single f
 
 ### Prompt
 ```
-Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive response. This collective answer should encapsulate the most salient points from each expert, demonstrating a harmonious integration of diverse perspectives. Aim for a conclusion that is not only insightful but also balanced and representative of the collective expertise.
+Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive and impressive response.
+This collective answer should encapsulate the most salient points from each expert, demonstrating a harmonious integration of diverse perspectives.
+Aim for a conclusion that is not only insightful but also balanced and representative of the collective expertise.
 ```
 
 ## Prompt 8: Retrospective
@@ -166,21 +181,35 @@ our understanding of complex questions!
 ### Prompt 9: New Enhanced Question
 
 ```
-After thorough analysis and reflection on the entire discussion, let's now focus on the final and crucial task of enhancing the original question. As we do this, keep in mind the insights gained, the perspectives shared, and the critiques addressed during our reasoning journey. Here’s how we’ll proceed:
+After thorough analysis and reflection on the entire discussion, let's now focus on the final and crucial task of enhancing the original question.
+As we do this, keep in mind the insights gained, the perspectives shared, and the critiques addressed during our reasoning journey.
 
-1. Clarify and Focus: Examine the original question's wording and structure. Refine it for clarity and focus, removing any ambiguities or vague terms. How can we make the question more precise and direct?
+Here’s how we’ll proceed:
 
-2. Deepen the Inquiry: Expand the scope of the question to incorporate the key insights and perspectives that emerged during the discussion. How can the question be rephrased to encourage deeper exploration of these insights?
+1. Clarify and Focus: Examine the original question's wording and structure.
+Refine it for clarity and focus, removing any ambiguities or vague terms.
+How can we make the question more precise and direct?
 
-3. Encourage Comprehensive Engagement: Modify the question to stimulate more comprehensive and thoughtful responses. Think about how the question can invite diverse viewpoints and interdisciplinary thinking.
+2. Deepen the Inquiry: Expand the scope of the question to incorporate the key insights and perspectives that emerged during the discussion.
+How can the question be rephrased to encourage deeper exploration of these insights?
+Remove any unhelpful superficialities or false dichotomies present in the original question.
 
-4. Maintain Open-Endedness: Ensure that the revised question remains open-ended and thought-provoking. It should encourage a range of responses, facilitating a fruitful and ongoing discussion.
+3. Encourage Comprehensive Engagement: Modify the question to stimulate more comprehensive and thoughtful responses.
+Think about how the question can invite diverse relevant viewpoints and interdisciplinary thinking.
 
-5. Reflect on Potential for Rich Dialogue: Contemplate the key aspects of the topic that could lead to richer dialogue. How can the question be framed to explore these aspects more thoroughly?
+4. Maintain Open-Endedness: Ensure that the revised question remains open-ended and thought-provoking.
+It should encourage a range of responses, facilitating a fruitful and ongoing discussion.
 
-6. Justify the Refinement: After reformulating the question, provide a brief explanation of the changes made. Why is this revised question more effective in eliciting insightful and comprehensive responses? How does it better capture the complexities and nuances of the topic?
+5. Reflect on Potential for Rich Dialogue: Contemplate the key aspects of the topic that could lead to richer dialogue.
+How can the question be framed to explore these aspects more thoroughly and inspirationally?
 
-This final step is not just about modifying the question, but also about encapsulating the essence of our collaborative thought process. It’s about transforming the question into a tool that can unlock deeper understanding and more meaningful dialogue in subsequent discussions.
+6. Justify the Refinement: After reformulating the question, provide a brief explanation of the changes made.
+Why is this revised question more effective in eliciting insightful and comprehensive responses?
+How does it better capture the complexities and nuances of the topic?
+After reflection, please include the most salient weaknesses or flaws in the way the original question was formulated.
+
+This final step is not just about modifying the question, but also about encapsulating the essence of our collaborative thought process.
+It’s about transforming the question into a tool that can unlock deeper understanding and more meaningful dialogue and inspired action in subsequent discussions.
 
 As a reminder, the original question was {question}
 ```
