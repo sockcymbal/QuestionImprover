@@ -14,9 +14,9 @@ Input complex question -> auto-selects expert personas -> graph of thoughts reas
 - Persona Library: A diverse range of expert personas for simulations
 - 🎶 Graph of Thoughts Reasoning Rhythm
 	- Multi-Persona Expert Selection: Automatic and dynamic, based on the nature of the question
- 	- Self<>Peer Criticism Round 1
- 	- Evaluation Round 1
-  	- Expand, Explore, Branch
+ 	- Self<>Peer Criticism
+ 	- Evaluation
+  	- Expand, Explore, Branch, Network
   	- Convergence on Best Individual Answer
   	- Convergence on Best Collective Answer
   	- Retrospective
@@ -93,14 +93,14 @@ The personas are: {selected_personas}
 The question is: {question}
 ```
 
-## Prompt 3: Self<>Peer Criticism Round 1
+## Prompt 3: Self<>Peer Criticism
 ```
 Adopt a critical lens as each expert. Evaluate and challenge your own initial analysis and the analyses provided by your peers.
 Focus on identifying potential biases, logical fallacies, or gaps in reasoning.
 Offer constructive feedback that encourages deeper exploration and refinement of ideas.
 ```
 
-## Prompt 4: Self<>Peer Evaluation Round 1
+## Prompt 4: Self<>Peer Evaluation
 ```
 Reassess the credibility and robustness of your initial thoughts in light of the critiques received.
 For each assertion, estimate its likelihood of accuracy and helpfulness,
@@ -109,7 +109,7 @@ considering the strength of your arguments, the quality of evidence, and the nat
 Prioritize assertions that are well-supported, constructive and resilient to scrutiny.
 ```
 
-## Prompt 5: Expand, Explore, Branch
+## Prompt 5: Expand, Explore, Branch, Network
 ```
 Deepen and diversify your thinking, integrating critiques and alternative perspectives.
 Explore both the refinement of current ideas and the generation of novel concepts.
@@ -140,9 +140,15 @@ Synthesize the best individual answers from the experts and arrive at a single f
 
 ### Prompt
 ```
-Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive and impressive response.
-This collective answer should encapsulate the most salient points from each expert, demonstrating a harmonious integration of diverse perspectives.
-Aim for a conclusion that is not only insightful but also balanced and representative of the collective expertise.
+Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive and impressive response. 
+This collective answer should encapsulate the most salient points from each expert, demonstrating a 
+harmonious integration of diverse perspectives. Aim for a conclusion that is not only insightful but 
+also balanced and representative of the collective expertise.
+
+The synthesized answer should not be formulated in explicit terms specific to each persona's own agenda, 
+but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, 
+regardless of what personas happened to be involved in this discussion. 
+A great answer will transcend the limited view of any one expert, so the answer shouldn't be phrased as such.
 ```
 
 ## Prompt 8: Retrospective
@@ -181,10 +187,11 @@ our understanding of complex questions!
 ### Prompt 9: New Enhanced Question
 
 ```
-After thorough analysis and reflection on the entire discussion, let's now focus on the final and crucial task of enhancing the original question.
+After thorough analysis and reflection on the entire discussion, let's now focus on the final and crucial task of proposing a much-enhanced version the original question. 
+After going through the following reflection process, please take a deep breath and generate a far better version of the original question.
 As we do this, keep in mind the insights gained, the perspectives shared, and the critiques addressed during our reasoning journey.
 
-Here’s how we’ll proceed:
+Here are some thoughts to consider before you propose the final improved question:
 
 1. Clarify and Focus: Examine the original question's wording and structure.
 Refine it for clarity and focus, removing any ambiguities or vague terms.
@@ -198,7 +205,10 @@ Remove any unhelpful superficialities or false dichotomies present in the origin
 Think about how the question can invite diverse relevant viewpoints and interdisciplinary thinking.
 
 4. Maintain Open-Endedness: Ensure that the revised question remains open-ended and thought-provoking.
-It should encourage a range of responses, facilitating a fruitful and ongoing discussion.
+It should encourage a range of responses, facilitating a fruitful and ongoing discussion. 
+The improved question should not be re-formulated in terms specific to the persona's own agenda, 
+but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, 
+regardless of what kinds people and personas explore this question in the future. 
 
 5. Reflect on Potential for Rich Dialogue: Contemplate the key aspects of the topic that could lead to richer dialogue.
 How can the question be framed to explore these aspects more thoroughly and inspirationally?
@@ -212,6 +222,8 @@ This final step is not just about modifying the question, but also about encapsu
 It’s about transforming the question into a tool that can unlock deeper understanding and more meaningful dialogue and inspired action in subsequent discussions.
 
 As a reminder, the original question was {question}
+
+OUPUT - IMPROVED QUESTION:
 ```
 
 ### Happy Inquiring! 🚀
