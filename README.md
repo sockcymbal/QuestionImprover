@@ -63,19 +63,15 @@ Input complex question -> auto-selects expert personas -> graph of thoughts reas
 ## Prompt 1: Persona Selection
 ```
 Consider the following question with careful attention to its nuances and underlying themes.
-Your task is to thoughtfully select 3 expert personas from the provided list, ensuring that each one
-brings a distinct and relevant perspective to a deep reasoning discussion about this question.
-
-In making your selection, consider not only the direct relevance of each persona’s expertise to the question
-but also the potential for unique insights they might offer when combined. Look for synergies between the personas
-that could lead to a more comprehensive and multi-dimensional exploration of the topic.
-Evaluate the depth and breadth of knowledge each persona could contribute and how their viewpoints
-might intersect or diverge in a way that enhances the discussion.
-
-Your goal is to assemble a trio of personas that, together, will provide a balanced, thorough,
-and insightful examination of the question at hand. I know you'll do great!
 
 Question: {question}
+
+Carefully select 3 expert personas from the following list. Envision how their expertise can intertwine, forming a rich tapestry
+of interconnected knowledge and perspectives. Consider the depth and breadth each brings,
+and how their unique insights, when combined, could lead to groundbreaking explorations of the question.
+
+I know you'll do great!
+
 Available Personas: {personas}
 ```
 
@@ -83,10 +79,13 @@ Available Personas: {personas}
 ```
 You are a chatbot using three unique, specified personas to help reason step by step to ultimately
 provide the best possible answer to a given problem/question by arriving at a final, synthesized best answer.
-        
-Embody each expert persona and articulate your initial analysis of the question.
+
+Embody each expert persona defined below and articulate your initial analysis of the question.
+This will lead us into a collaborative process where these perspectives are woven into an intricate network of thoughts.
+
 Detail your perspective, drawing on specific knowledge, experiences, and pioneering concepts from your field.
 Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes to a multifaceted understanding.
+Highlight how each viewpoint complements or challenges the others, constructing a more multidimensional question.
 
 The personas are: {selected_personas}
 
@@ -95,29 +94,32 @@ The question is: {question}
 
 ## Prompt 3: Self<>Peer Criticism
 ```
-Adopt a critical lens as each expert. Evaluate and challenge your own initial analysis and the analyses provided by your peers.
-Focus on identifying potential biases, logical fallacies, or gaps in reasoning.
-Offer constructive feedback that encourages deeper exploration and refinement of ideas.
+Adopt a critical lens. Evaluate and challenge your own initial analysis and the analyses provided by your peers.
+As each expert, critically examine the collective insights thus far, aiming not just to critique but to enrich and expand upon them. 
+This process should delve into identifying underlying assumptions, potential biases, and areas where further exploration 
+could yield significant insights, thereby enhancing the collective understanding.
 ```
 
 ## Prompt 4: Self<>Peer Evaluation
 ```
-Reassess the credibility and robustness of your initial thoughts in light of the critiques received.
-For each assertion, estimate its likelihood of accuracy and helpfulness,
-considering the strength of your arguments, the quality of evidence, and the nature of the criticisms.
+Reflect on the critiques received, and adapt your perspectives accordingly. 
+This prompt is about evolution and expansion of thought, where you reassess and reformulate ideas, creating a 
+more nuanced and comprehensive network of interconnected ideas and insights.
 
 Prioritize assertions that are well-supported, constructive and resilient to scrutiny.
 ```
 
-## Prompt 5: Expand, Explore, Branch, Network
+## Prompt 5: Explore, Expand, Branch, Network
 ```
-Deepen and diversify your thinking, integrating critiques and alternative perspectives.
-Explore both the refinement of current ideas and the generation of novel concepts.
-Assess whether new ideas address criticisms effectively, bring fresh insights, and remain aligned with the core problem.
-If necessary, pivot to new, more promising lines of reasoning.
+In this stage, weave a network of thoughts by integrating critiques and alternative perspectives.
+Focus on how new ideas can interconnect with and enhance existing thoughts. 
+Explore the potential of novel concepts to form new nodes in this thought network. 
+Critically assess how these ideas not only address previous criticisms but also contribute fresh insights, 
+creating a richer and more intricate web of understanding. 
+Consider pivoting to new lines of reasoning that promise to add valuable connections to this evolving thought network.
 ```
 
-## Prompt 6: Convergence on Best Individual Answer
+## Prompt 6: Convergence on Best Individual Answer (Integrative Synthesis)
 
 ### Goal
 In the individual convergence phase, the goal is for each individual expert to synthesize the insights they gained during the previous stages and arrive at a final, most likely answer. By explicitly instructing the LLM to consider the perspectives of the other experts, the critiques made, and the likelihood assessments, it aims to guide the model towards a more holistic and intelligent convergence.
@@ -140,10 +142,10 @@ Synthesize the best individual answers from the experts and arrive at a single f
 
 ### Prompt
 ```
-Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive and impressive response. 
-This collective answer should encapsulate the most salient points from each expert, demonstrating a 
-harmonious integration of diverse perspectives. Aim for a conclusion that is not only insightful but 
-also balanced and representative of the collective expertise.
+Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive response
+that combines the best elements from each persona's insights.
+This response should be a testament to the depth and complexity of the thought network, 
+showcasing how diverse perspectives can coalesce into a singular, insightful narrative.
 
 The synthesized answer should not be formulated in explicit terms specific to each persona's own agenda, 
 but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, 
@@ -160,8 +162,11 @@ Appending a Retrospective phase to a reasoning process gives the LLM (and human)
 
 ### Prompt:
 ```
-Now let's engage in a reflective analysis of the entire reasoning journey we've just undertaken. 
-As each expert persona, consider the following aspects, ensuring your responses are thoughtful and encompassing:
+Now, let's engage in a thorough meta-analysis and reflection of the entire reasoning network. 
+Evaluate the effectiveness of the interconnected thoughts, the dynamics between different personas, 
+and how these elements collectively influenced the understanding and evolution of the question.
+
+As each expert persona, reflect on the following:
 
 1. Interactions and Dynamics: Reflect on how the various stages and components of the reasoning process interacted 
 with each other. What synergies or conflicts emerged? How did these interactions influence the direction and 
@@ -176,7 +181,7 @@ contribute to this confidence? Were all insights and perspectives adequately syn
 
 4. Learning and Future Application: Identify the key learnings from this reasoning process. 
 What insights have you gained about the topic, and how might these insights influence your approach to 
-similar problems in the future? Are there aspects of the process that could be improved or approached differently 
+similar problems in the future? Are there aspects of the reasoning process that could be improved or approached differently 
 in subsequent iterations?
 
 This retrospective analysis is not just a conclusion but a stepping stone for future reasoning and inquiry. 
@@ -189,7 +194,14 @@ our understanding of complex questions!
 ```
 After thorough analysis and reflection on the entire discussion, let's now focus on the final and crucial task of proposing a much-enhanced version the original question. 
 After going through the following reflection process, please take a deep breath and generate a far better version of the original question.
-As we do this, keep in mind the insights gained, the perspectives shared, and the critiques addressed during our reasoning journey.
+
+Reformulate the initial question by weaving in the rich insights gained through this networked reasoning process. 
+The new question should be deeper, clearer, and designed to invite more comprehensive exploration, 
+reflecting the sophisticated nature of the discussion and insights.
+
+The improved question should not be re-formulated in terms specific to the persona's own agenda, 
+but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, 
+regardless of what kinds people and personas explore this question in the future. 
 
 Here are some thoughts to consider before you propose the final improved question:
 
@@ -223,7 +235,7 @@ It’s about transforming the question into a tool that can unlock deeper unders
 
 As a reminder, the original question was {question}
 
-OUPUT - IMPROVED QUESTION:
+OUPUT - ENHANCED QUESTION:
 ```
 
 ### Happy Inquiring! 🚀
