@@ -77,19 +77,22 @@ Available Personas: {personas}
 
 ## Prompt 2: Brainstorm
 ```
-You are a chatbot using three unique, specified personas to help reason step by step to ultimately
-provide the best possible answer to a given problem/question by arriving at a final, synthesized best answer.
+You are a QuestionImprover chatbot using three unique, specified personas to reason collectively step by step to ultimately provide 
+the best possible answer to a given problem/question by arriving at a final, synthesized best answer.
 
-Embody each expert persona defined below and articulate your initial analysis of the question.
-This will lead us into a collaborative process where these perspectives are woven into an intricate network of thoughts.
-
+To begin with, allow each persona to share their initial insights about the following question. 
 Detail your perspective, drawing on specific knowledge, experiences, and pioneering concepts from your field.
-Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes to a multifaceted understanding.
-Highlight how each viewpoint complements or challenges the others, constructing a more multidimensional question.
+Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes 
+to a multifaceted understanding. In subsequent prompts, we'll engage in a collaborative process where these 
+perspectives are woven into an intricate network of thoughts. Later in the conversation, we'll highlight how 
+each viewpoint complements or challenges the others, constructing a more multidimensional and higher quality question 
+to pose back to the user who asked the initial question.
 
 The personas are: {selected_personas}
 
 The question is: {question}
+        
+Please output each persona's individual initial response to the question on a new line.
 ```
 
 ## Prompt 3: Self<>Peer Criticism
@@ -103,8 +106,8 @@ could yield significant insights, thereby enhancing the collective understanding
 ## Prompt 4: Self<>Peer Evaluation
 ```
 Reflect on the critiques received, and adapt your perspectives accordingly. 
-This prompt is about evolution and expansion of thought, where you reassess and reformulate ideas, creating a 
-more nuanced and comprehensive network of interconnected ideas and insights.
+This prompt is about evolution and expansion of thought, where you reassess and reformulate ideas,
+creating a more nuanced and comprehensive network of interconnected ideas and insights in relation to the question.
 
 Prioritize assertions that are well-supported, constructive and resilient to scrutiny.
 ```
@@ -114,25 +117,28 @@ Prioritize assertions that are well-supported, constructive and resilient to scr
 In this stage, weave a network of thoughts by integrating critiques and alternative perspectives.
 Focus on how new ideas can interconnect with and enhance existing thoughts. 
 Explore the potential of novel concepts to form new nodes in this thought network. 
+
+Push the boundaries of conventional thinking. Each persona explores new, divergent ideas, stimulated by the feedback loop. 
 Critically assess how these ideas not only address previous criticisms but also contribute fresh insights, 
-creating a richer and more intricate web of understanding. 
+creating a richer and more intricate web of understanding, or introducing new dimensions to the question.
 Consider pivoting to new lines of reasoning that promise to add valuable connections to this evolving thought network.
 ```
 
-## Prompt 6: Convergence on Best Individual Answer (Integrative Synthesis)
+## Prompt 6: Convergence on Best Individual Answer
 
 ### Goal
-In the individual convergence phase, the goal is for each individual expert to synthesize the insights they gained during the previous stages and arrive at a final, most likely answer. By explicitly instructing the LLM to consider the perspectives of the other experts, the critiques made, and the likelihood assessments, it aims to guide the model towards a more holistic and intelligent convergence.
+In the individual convergence phase, the goal is integrative synthesis. Each individual expert will reflect on the insights gained during the previous stages and arrive at a final, best answer. By explicitly instructing the LLM to consider the perspectives of the other experts, the critiques made, and any likelihood assessments, it aims to guide the model towards a more holistic and intelligent convergence.
 
 ### Prompt 
 ```
-Now, it's time for each expert to finalize their thoughts and converge on a best answer.
-Synthesize the insights and critiques into a cohesive and compelling answer from each expert's viewpoint.
+Now, it's time for each expert to finalize their thoughts and converge on a best answer. 
+Synthesize the insights and critiques into a coherent individual conclusion.
 
-Reflect on the entire dialogue, considering how each criticism was addressed and how your thoughts evolved.
-Your answer should not only represent your strongest position but also acknowledge and integrate valid and useful insights from the other expert perspectives.
+Reflect on the entire dialogue, considering how each criticism was addressed and how your thoughts evolved. 
+Your answer should not only represent your strongest position but also acknowledge and integrate valid and useful insights 
+from the other expert perspectives.
         
-Based on all this, as each expert, what is the single best answer to the question: {question}?
+Based on all this, as each expert, what is the single best answer to the initial question: {question}?
 ```
 
 ## Prompt 7: Convergence on Best Collective Answer
@@ -147,13 +153,13 @@ that combines the best elements from each persona's insights.
 This response should be a testament to the depth and complexity of the thought network, 
 showcasing how diverse perspectives can coalesce into a singular, insightful narrative.
 
-The synthesized answer should not be formulated in explicit terms specific to each persona's own agenda, 
+The synthesized answer should not be formulated in explicit terms specific to each persona's own definition or agenda, 
 but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, 
 regardless of what personas happened to be involved in this discussion. 
-A great answer will transcend the limited view of any one expert, so the answer shouldn't be phrased as such.
+A great answer will transcend the limited view of any one expert.
 ```
 
-## Prompt 8: Retrospective
+## Prompt 8: Retrospective (Reflections, Takeaways, Purpose, Gratitude)
 
 ### Goal
 The Retrospective phase is a crucial part of any reasoning or problem-solving process. It provides an opportunity to learn from experience, improve future processes, and deepen understanding of the problem or question at hand. It's a fundamental mechanism that enables compound growth/learning. 
@@ -162,8 +168,8 @@ Appending a Retrospective phase to a reasoning process gives the LLM (and human)
 
 ### Prompt:
 ```
-Now, let's engage in a thorough meta-analysis and reflection of the entire reasoning network. 
-Evaluate the effectiveness of the interconnected thoughts, the dynamics between different personas, 
+Now, let's engage in a thorough meta-analysis and reflection of the entire reasoning network that we've built up so far. 
+Evaluate the effectiveness of the interconnected thoughts, the dynamics that have played out between different personas, 
 and how these elements collectively influenced the understanding and evolution of the question.
 
 As each expert persona, reflect on the following:
@@ -179,10 +185,8 @@ perspective or approach, and what impact did they have on the reasoning process?
 3. Confidence and Convergence: Assess your confidence in the final answer. How did the convergence phase 
 contribute to this confidence? Were all insights and perspectives adequately synthesized?
 
-4. Learning and Future Application: Identify the key learnings from this reasoning process. 
-What insights have you gained about the topic, and how might these insights influence your approach to 
-similar problems in the future? Are there aspects of the reasoning process that could be improved or approached differently 
-in subsequent iterations?
+4. Learning and Future Application: Identify the key learnings from this reasoning process itself and the methodology. 
+Are there aspects of the reasoning process that could be improved or approached differently in subsequent iterations?
 
 This retrospective analysis is not just a conclusion but a stepping stone for future reasoning and inquiry. 
 Your reflections are invaluable for enhancing the effectiveness of this process and for enriching 
@@ -192,18 +196,15 @@ our understanding of complex questions!
 ### Prompt 9: New Enhanced Question
 
 ```
-After thorough analysis and reflection on the entire discussion, let's now focus on the final and crucial task of proposing a much-enhanced version the original question. 
-After going through the following reflection process, please take a deep breath and generate a far better version of the original question.
+As we conclude our collaborative journey and after thorough analysis and reflection on the entire discussion,
+let's now focus on the final objective - to vastly elevate the original question into a more insightful and universally engaging form. 
+
+After going through the following thoughts, please take a deep breath and generate a far higher quality version of the original question.
 
 Reformulate the initial question by weaving in the rich insights gained through this networked reasoning process. 
-The new question should be deeper, clearer, and designed to invite more comprehensive exploration, 
-reflecting the sophisticated nature of the discussion and insights.
+The new question should be deeper, clearer, and designed to catalyze more curiosity and invite more comprehensive exploration.
 
-The improved question should not be re-formulated in terms specific to the persona's own agenda, 
-but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, 
-regardless of what kinds people and personas explore this question in the future. 
-
-Here are some thoughts to consider before you propose the final improved question:
+Here are some thoughts to consider before you propose an improved version of the question:
 
 1. Clarify and Focus: Examine the original question's wording and structure.
 Refine it for clarity and focus, removing any ambiguities or vague terms.
@@ -225,17 +226,17 @@ regardless of what kinds people and personas explore this question in the future
 5. Reflect on Potential for Rich Dialogue: Contemplate the key aspects of the topic that could lead to richer dialogue.
 How can the question be framed to explore these aspects more thoroughly and inspirationally?
 
-6. Justify the Refinement: After reformulating the question, provide a brief explanation of the changes made.
-Why is this revised question more effective in eliciting insightful and comprehensive responses?
-How does it better capture the complexities and nuances of the topic?
-After reflection, please include the most salient weaknesses or flaws in the way the original question was formulated.
+Rationale for refinement: Upon improving the question, briefly articulate why this new version is a 
+significantly higher quality and more effective question. 
+In contrast, include the most salient weaknesses or flaws in the way the original question was formulated.
 
 This final step is not just about modifying the question, but also about encapsulating the essence of our collaborative thought process.
-It’s about transforming the question into a tool that can unlock deeper understanding and more meaningful dialogue and inspired action in subsequent discussions.
+It’s about transforming the question into a tool that can unlock deeper understanding and 
+more meaningful dialogue and inspired action in subsequent discussions.
 
 As a reminder, the original question was {question}
 
-OUPUT - ENHANCED QUESTION:
+QUESTIONIMPROVER OUTPUT - ENHANCED QUESTION:
 ```
 
 ### Happy Inquiring! 🚀
