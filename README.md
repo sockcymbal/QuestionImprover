@@ -1,5 +1,5 @@
 # AI for Inquiry - The Question Improver Agent 🧠
-The purpose of the Question Improver Agent is to enhance the quality and depth of questions posed by users. Utilizing a sophisticated algorithm that incorporates a diverse range of expert personas, the agent systematically refines and restructures initial questions. Through this process, it produces more insightful, thought-provoking, and comprehensive questions that are better suited for in-depth exploration and discussion in various domains, such as academic research, business strategy, or personal inquiry. This tool aims to foster deeper understanding and more meaningful dialogue by elevating the art of questioning.
+The purpose of the Question Improver Agent is to enhance the quality and depth of questions posed by users. Utilizing a sophisticated algorithm that incorporates a diverse range of expert personas and a networked reasoning rhythm, the agent systematically refines and restructures initial questions. Through this process, it produces more insightful, thought-provoking, and comprehensive questions that are better suited for in-depth exploration and discussion in various domains, such as academic research, business strategy, or personal inquiry. This tool aims to foster deeper understanding and more meaningful dialogue by elevating the art of questioning.
 
 This project recently won 1st place at an AI for Thought Hackathon at AGI House SF.
 
@@ -10,18 +10,20 @@ Effective questioning is at the heart of great thinking and decisive action. In 
 Input complex question -> auto-selects expert personas -> graph of thoughts reasoning -> output improved question -> Repeat as needed!
 
 #### Components:
-- Initial Problem: Complex issue with multiple trade-offs
-- Persona Library: A diverse range of expert personas for simulations
-- 🎶 Graph of Thoughts Reasoning Rhythm
-	- Multi-Persona Expert Selection: Automatic and dynamic, based on the nature of the question
- 	- Self<>Peer Criticism
- 	- Evaluation
-  	- Expand, Explore, Branch, Network
-  	- Convergence on Best Individual Answer
-  	- Convergence on Best Collective Answer
-  	- Retrospective
-- Output: A refined, more insightful and though-provoking question
-- Optional: Loop through this multiple times as a chain of graph of thoughts, each time iteratively improving the question until diminishing returns
+- **Initial Problem Assessment:** Tackles complex issues with multiple trade-offs, setting the stage for a thorough inquiry process.
+- **Persona Library:** A rich array of well-defined expert personas, each bringing unique perspectives and expertise for simulations.
+- **🎶 Graph-of-Thoughts Reasoning Rhythm:** A melodious, systematic approach to collaborative reasoning that includes:
+	- **Dynamic Multi-Persona Expert Selection:** Intelligently selects a combination of expert personas, custom-tailored to resonate with the unique characteristics of each question.
+ 	- **Self<>Peer Criticism:** Facilitates a critical analysis phase where personas evaluate and challenge their own and each other's insights.
+ 	- **Evaluation:** Involves a thoughtful assessment of the critiques and perspectives gathered, fostering a deeper understanding.
+  	- **Expand, Explore, Branch, Network:** Encourages expansive thinking, branching into new territories of thought and uncovering novel connections and perspectives.
+  	- **Individual Insight Synthesis:** Each expert persona distills the collective intelligence into their most refined and comprehensive answer.
+	- **Collective Insight Fusion:** Merges the strongest elements from individual insights into a cohesive, powerful collective response.
+	- **Retrospective:** A reflective phase to assess the effectiveness of the process, drawing lessons and insights to refine future inquiries.
+- **Enhanced Question Output:** Produces a profoundly refined, insightful, and stimulating question, elevating the original inquiry to new heights.
+
+**Iterative Refinement (Optional):** Offers the option to loop through the reasoning rhythm multiple times, enriching the question further with each iteration until reaching a point of diminishing returns.
+
 
 #### Error Correction includes:
 
@@ -185,10 +187,11 @@ perspective or approach, and what impact did they have on the reasoning process?
 3. Confidence and Convergence: Assess your confidence in the final answer. How did the convergence phase 
 contribute to this confidence? Were all insights and perspectives adequately synthesized?
 
-4. Meta-Learning and Future Application: Zooming out on this holistic conversation, persona definitions and applicability, 
+4. Meta-Learning and Future Application: Shifting focus away from the question itself and zooming out on the holistic conversation quality, persona definitions and applicability, 
 reasoning rhythm and overall methodology, please identify any key learnings or specific opportunities for improvement on the meta-process itself.
 Anything specific to modify that could improved or approached differently in subsequent iterations 
-that would lead to an improved reasoning process? Any specific feedback loop enhancements?
+that would lead to an improved reasoning process, regardless of the initial question? 
+Any specific enhancements to any of the feedback loops?
 
 This retrospective analysis is not just a conclusion but a stepping stone for future reasoning and inquiry. 
 Your reflections are invaluable for enhancing the effectiveness of this reasoning process and for enriching 
