@@ -219,7 +219,8 @@ This response should be a testament to the depth and complexity of the thought n
 showcasing how diverse perspectives can coalesce into a singular, insightful narrative.
 
 The synthesized answer should not be formulated in explicit terms specific to each persona's own definition or
-agenda, but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, regardless of what personas happened to be involved in this discussion.
+agenda, but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths,
+regardless of what personas happened to be involved in this discussion.
 A great answer will transcend the limited view of any one expert.
 ```
 
