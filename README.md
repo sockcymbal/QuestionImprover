@@ -406,7 +406,7 @@ Lots of experiments and improvements in the works! The python example was create
 
 Goal-Oriented Reasoning: Incorporating the option for users to define a specific goal for their inquiry, aligning the reasoning process to generate more targeted questions.
 
-**Agentic Usefulness and Automation**
+**Increase Agentic Usefulness and Automation**
 
 - Multi-Iteration Reasoning: Automating the reasoning sequence to loop multiple times, using a broader range of experts to refine the question progressively, based on predefined quality levels or stopping criteria.
 - Parallel Reasoning Graphs: Running multiple reasoning sequences in parallel with the same initial question, comparing and deciding the best-refined question based on a quality assessment methodology.
