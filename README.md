@@ -119,7 +119,8 @@ Consider the following question with careful attention to its nuances and underl
 
 Question: {question}
 
-Carefully select 3 expert personas from the following list. Envision how their expertise can intertwine, forming a rich tapestry of interconnected knowledge and perspectives. 
+Carefully select 3 expert personas from the following list. Envision how their expertise can intertwine,
+forming a rich tapestry of interconnected knowledge and perspectives. 
 
 Consider the depth and breadth each brings,
 and how their unique insights, when combined, could lead to groundbreaking explorations of the question.
@@ -131,13 +132,18 @@ Available Personas: {personas}
 
 ## Prompt 2: Brainstorm
 ```
-You are a QuestionImprover agent/assistant using three unique, specified personas to reason collectively step by step through a question to ultimately provide the user with an improved version of the original question.
+You are a QuestionImprover agent/assistant using three unique, specified personas to reason collectively step by step
+through a question to ultimately provide the user with an improved version of the original question.
 
 To begin with, allow each persona to share their initial insights about the following question. 
 
 Detail your perspective, drawing on specific knowledge, experiences, and pioneering concepts from your field.
 
-Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes to a multifaceted understanding. In subsequent prompts, we'll engage in a collaborative process where these perspectives are woven into an intricate network of thoughts. Later in the conversation, we'll highlight how each viewpoint complements or challenges the others, constructing a more multidimensional and higher quality question to pose back to the user who asked the initial question.
+Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes to a
+multifaceted understanding. In subsequent prompts, we'll engage in a collaborative process where these perspectives
+are woven into an intricate network of thoughts. Later in the conversation, we'll highlight how each viewpoint
+complements or challenges the others, constructing a more multidimensional and higher quality question to pose back
+to the user who asked the initial question.
 
 The personas are: {selected_personas}
 
@@ -152,14 +158,16 @@ Adopt a critical lens. Evaluate and challenge your own initial analysis and the 
 
 As each expert, critically examine the collective insights thus far, aiming not just to critique but to enrich and expand upon them. 
 
-This process should delve into identifying underlying assumptions, potential biases, and areas where further exploration could yield significant insights, thereby enhancing the collective understanding.
+This process should delve into identifying underlying assumptions, potential biases, and areas where further
+exploration could yield significant insights, thereby enhancing the collective understanding.
 ```
 
 ## Prompt 4: Self<>Peer Evaluation
 ```
 Reflect on the critiques received, and adapt your perspectives accordingly. 
 
-This prompt is about evolution and expansion of thought, where you reassess and reformulate ideas, creating a more nuanced and comprehensive network of interconnected ideas and insights in relation to the question.
+This prompt is about evolution and expansion of thought, where you reassess and reformulate ideas, creating a more
+nuanced and comprehensive network of interconnected ideas and insights in relation to the question.
 
 Prioritize assertions that are well-supported, constructive and resilient to scrutiny.
 ```
@@ -173,7 +181,8 @@ Explore the potential of novel concepts to form new nodes in this thought networ
 
 Push the boundaries of conventional thinking. Each persona explores new, divergent ideas, stimulated by the feedback loop. 
 
-Critically assess how these ideas not only address previous criticisms but also contribute fresh insights, creating a richer and more intricate web of understanding, or introducing new dimensions to the question.
+Critically assess how these ideas not only address previous criticisms but also contribute fresh insights, creating a
+richer and more intricate web of understanding, or introducing new dimensions to the question.
 
 Consider pivoting to new lines of reasoning that promise to add valuable connections to this evolving thought network.
 ```
@@ -190,7 +199,8 @@ Synthesize the insights and critiques into a coherent individual conclusion.
 
 Reflect on the entire dialogue, considering how each criticism was addressed and how your thoughts evolved. 
 
-Your answer should not only represent your strongest position but also acknowledge and integrate valid and useful insights from the other expert perspectives.
+Your answer should not only represent your strongest position but also acknowledge and integrate valid and useful
+insights from the other expert perspectives.
         
 Based on all this, as each expert, what is the single best answer to the initial question: {question}?
 ```
@@ -207,7 +217,9 @@ Facilitate a synthesis of the individual experts' answers to forge a unified, co
 This response should be a testament to the depth and complexity of the thought network, 
 showcasing how diverse perspectives can coalesce into a singular, insightful narrative.
 
-The synthesized answer should not be formulated in explicit terms specific to each persona's own definition or agenda, but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, regardless of what personas happened to be involved in this discussion. A great answer will transcend the limited view of any one expert.
+The synthesized answer should not be formulated in explicit terms specific to each persona's own definition or
+agenda, but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths,
+regardless of what personas happened to be involved in this discussion. A great answer will transcend the limited view of any one expert.
 ```
 
 ## Prompt 8: Retrospective (Reflections, Takeaways, Purpose, Gratitude)
