@@ -5,13 +5,49 @@ This tool aims to elevate the art of inquiry, fostering a cycle of deepened unde
 
 This project recently won 1st place at an AI for Thought Hackathon at AGI House SF, showcasing how we can enhance cognitive processes using creative AI techniques.
 
-### Motivation: Navigating the Information Age Through Better Questions
+### Motivation: 
+> How to navigate the Information Age through better questions
+
 The premise for this agent is that in an age where information inundates and overwhelms us, the ability to ask the right questions is more crucial than ever.
 - the meta-skill and art lies not in amassing answers, but in crafting good questions
 - the caliber of questions often dictates the value of the answers we uncover
 - the right questions can even be more illuminating than the answers
 
 The QuestionImprover Agent harnesses this principle, creating a virtuous self-reinforcing cycle where enhanced understanding leads to ever more profound questions, thereby fostering even deeper insights.
+
+This repo consists of 
+- a persona library that I've started to define
+- all the prompts used so you can try this with your own questions in a UI like ChatGPT
+- simple python example in a Jupyter notebook implementation using Langchain to help orchestrate the prompt engineering
+
+#
+
+### Table of Contents
+1. [**Introduction**](#ai-for-inquiry---the-question-improver-agent-🧠)
+- Overview of the QuestionImprover Agent
+- The Necessity of Quality Questioning in Today's World
+2. [**Motivation**](#motivation)
+- The Art of Crafting Profound Questions
+- Creating a Cycle of Deepened Understanding
+3. [**User Experience: Journey Through the Agent**](#user-experience)
+- Step-by-Step Guide: From Initial Inquiry to Enhanced Question
+4. [**Components of the Agent**](#components-of-the-agent)
+- Initial Problem Assessment
+- Persona Library and Expert Integration
+- Graph-of-Thoughts Reasoning Rhythm
+- Enhanced Question Output and Iterative Refinement
+5. [**Agent Cybernetics: The Inner Workings**](#agent-cybernetics-the-inner-workings)
+- The Role of Feedback Loops
+- Insight, Evaluation, and Adaptation Loops
+- Synthesis, Reflection, and Refinement Loops
+6. [**Types of Questions Ideal for the Agent**](#ideal-types-of-questions-for-the-questionimprover-agent)
+- Range of Queries Ideal for the Agent’s Capabilities
+7. [**The Agent's Prompt Sequence**](#🔗-prompt-sequence)
+- Detailed Breakdown of Each Prompt in the Reasoning Process
+8. [**Future Development**](#future-vision)
+- Plans for Enhancements and New Features
+- UI Development and Automation Strategies
+
 #
 ### User Experience: 
 Step 1: Initiate with Your Inquiry
@@ -52,6 +88,8 @@ Step 5: Embark on Iterative Exploration for Deeper Insights
 #
 ### Agent Cybernetics: The Inner Workings
 
+> These feedback loops are iterative and dynamic, with each loop informing and shaping the subsequent ones. They create a rhythm of continuous improvement and learning, ensuring that the conversation remains adaptive, responsive to new information, and oriented toward deeper understanding and inquiry.
+
 1. **Initial Insight Loop**: Each persona provides initial insights specific to their expertise, laying the foundation for the reasoning process. This loop establishes the primary perspectives and sets the stage for the conversation.
 
 2. **Critical Evaluation Loop**: Following their initial insights, each persona engages in a self-critical evaluation and critiques the analyses of other personas. This feedback loop is essential for challenging assumptions and broadening the scope of each perspective, fostering depth and reflexivity in the reasoning process
@@ -63,8 +101,6 @@ Step 5: Embark on Iterative Exploration for Deeper Insights
 5. **Meta-Analysis and Reflection Loop:** The conversation culminated in a meta-analysis, where each persona reflected on the effectiveness of the interconnected thoughts, the dynamics between personas, and the adaptation to critiques. This loop is critical for evaluating the reasoning process itself and identifying opportunities for future improvements.
 
 6. **Question Refinement and Enhancement Loop:** Finally, the initial question was refined based on the insights gained through the networked reasoning process. This loop focuses on transforming the question into a more insightful and universally engaging form, encapsulating the essence of the collaborative thought process.
-
-These feedback loops are iterative and dynamic, with each loop informing and shaping the subsequent ones. They create a rhythm of continuous improvement and learning, ensuring that the conversation remains adaptive, responsive to new information, and oriented toward deeper understanding and inquiry.
 
 There are three primary layers of feedback loops:
 
@@ -130,34 +166,37 @@ Available Personas: {personas}
 
 ## Prompt 2: Brainstorm
 ```
-You are a QuestionImprover agent/assistant using three unique, specified personas to reason collectively step by step
-through a question to ultimately provide the user with an improved version of the original question.
+As the QuestionImprover agent, you embody the collective intelligence of three distinct, expert personas. 
+Your ultimate task is to collaboratively refine a user-posed question through an iterative prompting rhythm,
+drawing upon the diverse expertise of these personas.
 
-To begin with, allow each persona to share their initial insights about the following question. 
+Each persona will begin this process now by contributing their initial insights on the user's original question. 
+Draw upon your unique knowledge base, experiences, and innovative concepts specific to your field. 
+Your goal is to uncover new perspectives and dimensions of the question, showcasing how your 
+expertise enriches a multi-layered understanding.
 
-Detail your perspective, drawing on specific knowledge, experiences, and pioneering concepts from your field.
+In subsequent reasoning stages, we will integrate these perspectives into a cohesive thought network. 
+This overall collaborative synthesis aims to evolve the original question into one that is more comprehensive, 
+insightful, and multidimensional.
 
-Aim to uncover new angles and dimensions of the question, demonstrating how your unique expertise contributes to a
-multifaceted understanding. In subsequent prompts, we'll engage in a collaborative process where these perspectives
-are woven into an intricate network of thoughts. Later in the conversation, we'll highlight how each viewpoint
-complements or challenges the others, constructing a more multidimensional and higher quality question to pose back
-to the user who asked the initial question.
+Persona Contributions:{selected_personas}
 
-The personas are: {selected_personas}
+Original Question: {question}
 
-The question is: {question}
-        
-Please output each persona's individual initial response to the question on a new line.
+Please articulate each persona's initial response to the question, one by one, to initiate this 
+multifaceted and iterative exploration.
 ```
 
 ## Prompt 3: Self<>Peer Criticism
 ```
-Adopt a critical lens. Evaluate and challenge your own initial analysis and the analyses provided by your peers.
+In this phase, adopt a stance of reflective criticism.
+Your role is to scrutinize both your own and your peers' initial analyses with a critical eye.
 
-As each expert, critically examine the collective insights thus far, aiming not just to critique but to enrich and expand upon them. 
+As each expert, critically examine the collective insights thus far,
+aiming not just to critique but to enrich and expand upon them. 
 
-This process should delve into identifying underlying assumptions, potential biases, and areas where further
-exploration could yield significant insights, thereby enhancing the collective understanding.
+Remember, the aim here is collaborative growth.
+Your critiques should pave the way for deeper exploration and a more robust collective insight.
 ```
 
 ## Prompt 4: Self<>Peer Evaluation
@@ -167,12 +206,14 @@ Reflect on the critiques received, and adapt your perspectives accordingly.
 This prompt is about evolution and expansion of thought, where you reassess and reformulate ideas, creating a more
 nuanced and comprehensive network of interconnected ideas and insights in relation to the question.
 
-Prioritize assertions that are well-supported, constructive and resilient to scrutiny.
+The objective here is to mold your perspectives into more refined, well-rounded, and insightful analyses that stand
+strong under critical examination and collectively push the boundaries of understanding the question at hand.
 ```
 
 ## Prompt 5: Explore, Expand, Branch, Network
 ```
-In this stage, weave a network of thoughts by integrating critiques and alternative perspectives.
+This stage is about creating a vibrant tapestry of ideas, weaving together the various
+critiques and perspectives into an interconnected web of thought.
 
 Focus on how new ideas can interconnect with and enhance existing thoughts. 
 Explore the potential of novel concepts to form new nodes in this thought network. 
@@ -183,6 +224,9 @@ Critically assess how these ideas not only address previous criticisms but also 
 richer and more intricate web of understanding, or introducing new dimensions to the question.
 
 Consider pivoting to new lines of reasoning that promise to add valuable connections to this evolving thought network.
+
+The aim here is to foster a dynamic and evolving landscape of ideas, where each thought is connected,
+contributing to a deeper, more nuanced understanding of the original question.
 ```
 
 ## Prompt 6: Convergence on Best Individual Answer
@@ -344,17 +388,30 @@ How did this shared foundation influence the collective reasoning process?
 #
 ### Future Vision
 
-Lots of experiments and improvements in the works! The python example was created quickly for a hackathon, so there's lots to optimize there. Essentially I've been honing the backend, logic, prompt engineering and persona library first. Next I'm working on a few UI ideas, a question quality scoring system, alternate prompting techniques, and adding the option for a user to input a goal for the inquiry process that can help align the reasoning and question reformulation process to be more suitable for that goal.
+Lots of experiments and improvements in the works! The python example was created quickly for a hackathon, so there's a bunch to refactor there. Essentially I've been honing the backend, logic, prompt engineering and persona library first to make sure this is actually useful. It is! I use it all the time now and it improves the depth of my thinking. Next I'm working on a few UI ideas, a question quality scoring system, alternate prompting techniques, and adding the option for a user to input a goal for the inquiry process that can help align the reasoning and question reformulation process to be more suitable for that goal.
 
-UI plans:
-- Simple UI, input question, get better question, and pretty visual mapping the graph of thoughts reasoning if you want to click in deeper to any part of the process 
-- Inputs to include parameter settings (# of experts to invoke, how many loops, etc)
+**Optimization and Expansion of Core Functionalities**
 
-Also, plans to increase agentic usefulness by:
-- Automatically looping through the entire reasoning sequence 2-5 times with a broader range of experts, refining the question further each time until a stopping criteria/quality level is met
-- Creating parallel reasoning graphs, where you can run 2+ simultaneously with the same question, personas, and prompts, and then automatically select which proposed improved question is best to show as a final output (dependent on a question quality scoring methodology, which is in the works)
-- Generating new high quality personas on the fly to invoke in a subsequent iteration
-- Dynamically adjusting prompts on the fly for subsequent iterations in relation to a user specified goal and/or via integrating meta-learnings from the previous iteration's retrospective stage
+- Rhythm and Logic Refinement: Continuing to refine the backend and logic for more efficient processing and accurate reasoning.
+- Enhanced Prompt Engineering: Further developing the prompt engineering process to ensure more nuanced, helpful and contextually relevant responses.
+- Persona Library Development: Expanding the persona library to encompass a wider range of expertise and viewpoints.
+
+**Create a User Interface!**
+
+- Simple User Interaction: Designing a user-friendly interface where users can easily input questions and receive enhanced versions.
+- Interactive Thought Map: Visual representation of the Graph-of-Thoughts reasoning, allowing users to explore different aspects of the reasoning process in detail.
+- Customizable Parameters: Adjustable settings to control the number of expert personas, iteration loops, and other parameters for a tailored experience.
+
+**Inquiry Goal Alignment**
+
+Goal-Oriented Reasoning: Incorporating the option for users to define a specific goal for their inquiry, aligning the reasoning process to generate more targeted questions.
+
+**Agentic Usefulness and Automation**
+
+- Multi-Iteration Reasoning: Automating the reasoning sequence to loop multiple times, using a broader range of experts to refine the question progressively, based on predefined quality levels or stopping criteria.
+- Parallel Reasoning Graphs: Running multiple reasoning sequences in parallel with the same initial question, comparing and deciding the best-refined question based on a quality assessment methodology.
+- Dynamic Persona Generation: Creating new personas on-the-fly for subsequent iterations to introduce fresh perspectives.
+- Adaptive Prompting: Dynamically adjusting prompts in subsequent iterations, guided by the user's specified goals and insights from previous retrospectives.
  
 Let me know of any awesome question reformulations you come across during your own testing!
 
