@@ -1,4 +1,4 @@
-# AI for Inquiry - The Question Improver Agent 🧠
+# 🧠 AI for Inquiry - The Question Improver Agent
 The Question Improver Agent is an LLM-driven "tool for thought" designed to elevate the quality and depth of user-posed questions. It utilizes a novel reasoning algorithm integrating diverse expert personas and a graph-based reasoning rhythm to systematically refine questions, making them more insightful, thought-provoking and suited for in-depth exploration across various domains, such as academic research, business strategy, or personal inquiry.
 
 This tool aims to elevate the art of inquiry, fostering a cycle of deepened understanding, more meaningful dialog and progressively insightful questioning.
@@ -86,7 +86,7 @@ Step 5: Embark on Iterative Exploration for Deeper Insights
 - Option to re-engage with the reasoning process multiple times, further enriching the question with each cycle. This iterative approach allows for continuous improvement, reaching deeper layers of understanding until a point of maximum insight is achieved.
 
 #
-### Agent Cybernetics: The Inner Workings
+### 🧬 Agent Cybernetics: The Inner Workings
 
 > These feedback loops are iterative and dynamic, with each loop informing and shaping the subsequent ones. They create a rhythm of continuous improvement and learning, ensuring that the conversation remains adaptive, responsive to new information, and oriented toward deeper understanding and inquiry.
 
@@ -386,7 +386,7 @@ How did this shared foundation influence the collective reasoning process?
 ``````
 
 #
-### Future Vision
+### 🔮 Future Vision
 
 Lots of experiments and improvements in the works! The python example was created quickly for a hackathon, so there's a bunch to refactor there. Essentially I've been honing the backend, logic, prompt engineering and persona library first to make sure this is actually useful. It is! I use it all the time now and it improves the depth of my thinking. Next I'm working on a few UI ideas, a question quality scoring system, alternate prompting techniques, and adding the option for a user to input a goal for the inquiry process that can help align the reasoning and question reformulation process to be more suitable for that goal.
 
