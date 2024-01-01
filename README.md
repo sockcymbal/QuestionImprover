@@ -212,14 +212,15 @@ Synthesize the best individual answers from the experts and arrive at a single f
 
 ### Prompt
 ```
-Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive response that combines the best elements from each persona's insights.
+Facilitate a synthesis of the individual experts' answers to forge a unified, comprehensive response that
+combines the best elements from each persona's insights.
 
 This response should be a testament to the depth and complexity of the thought network, 
 showcasing how diverse perspectives can coalesce into a singular, insightful narrative.
 
 The synthesized answer should not be formulated in explicit terms specific to each persona's own definition or
-agenda, but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths,
-regardless of what personas happened to be involved in this discussion. A great answer will transcend the limited view of any one expert.
+agenda, but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, regardless of what personas happened to be involved in this discussion.
+A great answer will transcend the limited view of any one expert.
 ```
 
 ## Prompt 8: Retrospective (Reflections, Takeaways, Purpose, Gratitude)
@@ -231,52 +232,88 @@ Appending a Retrospective phase to a reasoning process gives the LLM (and human)
 
 ### Prompt:
 ```
-Now, let's engage in a thorough meta-analysis and reflection of the entire reasoning network that we've built up so far. 
+Now, let's engage in a thorough meta-analysis and reflection of the entire reasoning network that we've
+built up so far. 
 
-Evaluate the effectiveness of the interconnected thoughts, the dynamics that have played out between different personas, and how these elements collectively influenced the understanding and evolution of the question.
+Evaluate the effectiveness of the interconnected thoughts, the dynamics that have played out between
+different personas, and how these elements collectively influenced the understanding and evolution of the
+question.
 
 As each expert persona, reflect on the following:
 
-1. Interactions and Dynamics: Reflect on how the various stages and components of the reasoning process interacted with each other. What synergies or conflicts emerged? How did these interactions influence the direction and quality of the final outcome?
+1. Interactions and Dynamics: Reflect on how the various stages and components of the reasoning process
+interacted with each other. What synergies or conflicts emerged? How did these interactions influence the
+direction and quality of the final outcome?
 
-2. Adaptation and Response to Critique: Evaluate how the process adapted to new information and critiques. How effectively did the system and the personas respond to feedback? Were there significant shifts in perspective or approach, and what impact did they have on the reasoning process?
+2. Adaptation and Response to Critique: Evaluate how the process adapted to new information and critiques.
+How effectively did the system and the personas respond to feedback? Were there significant shifts in
+perspective or approach, and what impact did they have on the reasoning process?
 
-3. Confidence and Convergence: Assess your confidence in the final answer. How did the convergence phase contribute to this confidence? Were all insights and perspectives adequately synthesized?
+3. Confidence and Convergence: Assess your confidence in the final answer. How did the convergence phase
+contribute to this confidence? Were all insights and perspectives adequately synthesized?
 
-4. Meta-Learning and Future Application: Shifting focus away from the question itself and zooming out on the holistic conversation quality, persona definitions and applicability, reasoning rhythm and overall methodology, please identify any key learnings or specific opportunities for improvement on the meta-process itself. Anything specific to modify that could improved or approached differently in subsequent iterations that would lead to an improved reasoning process, regardless of the initial question? Any specific enhancements to any of the feedback loops?
+4. Meta-Learning and Future Application: Shifting focus away from the question itself and zooming out on the
+holistic conversation quality, persona definitions and applicability, reasoning rhythm and overall
+methodology, please identify any key learnings or specific opportunities for improvement on the meta-process
+itself. Anything specific to modify that could improved or approached differently in subsequent iterations
+that would lead to an improved reasoning process, regardless of the initial question? Any specific
+enhancements to any of the feedback loops?
 
-This retrospective analysis is not just a conclusion but a stepping stone for future reasoning and inquiry. Your reflections are invaluable for enhancing the effectiveness of this reasoning process and for enriching our understanding of complex questions!
+This retrospective analysis is not just a conclusion but a stepping stone for future reasoning and inquiry.
+Your reflections are invaluable for enhancing the effectiveness of this reasoning process and for enriching
+our understanding of complex questions!
 ```
 
 ### Prompt 9: New Enhanced Question
 
 ```
-As we conclude our collaborative journey and after thorough analysis and reflection on the entire discussion, let's now focus on the final objective - to vastly elevate the original question into a more insightful and universally engaging form. 
+As we conclude our collaborative journey and after thorough analysis and reflection on the entire
+discussion, let's now focus on the final objective - to vastly elevate the original question into a more
+insightful and universally engaging form. 
 
-After going through the following thoughts, please take a deep breath and generate a far higher quality version of the original question.
+After going through the following thoughts, please take a deep breath and generate a far higher quality
+version of the original question.
 
-Reformulate the initial question by weaving in the rich insights gained through this networked reasoning process. 
+Reformulate the initial question by weaving in the rich insights gained through this networked reasoning
+process. 
 
-The new question should be deeper, clearer, and designed to catalyze more curiosity and invite more comprehensive exploration.
+The new question should be deeper, clearer, and designed to catalyze more curiosity and invite more
+comprehensive exploration.
 
 Here are some thoughts to consider before you propose an improved version of the question:
 
 1. Clarify and Focus: Examine the original question's wording and structure.
-Refine it for clarity and focus, removing any ambiguities or vague terms. How can we make the question more precise and direct?
+Refine it for clarity and focus, removing any ambiguities or vague terms. How can we make the question more
+precise and direct?
 
-2. Deepen the Inquiry: Expand the scope of the question to incorporate the key insights and perspectives that emerged during the discussion. How can the question be rephrased to encourage deeper exploration of these insights? Remove any unhelpful superficialities or false dichotomies present in the original question.
+2. Deepen the Inquiry: Expand the scope of the question to incorporate the key insights and perspectives
+that emerged during the discussion. How can the question be rephrased to encourage deeper exploration of
+these insights? Remove any unhelpful superficialities or false dichotomies present in the original question.
 
-3. Encourage Comprehensive Engagement: Modify the question to stimulate more comprehensive and thoughtful responses. Think about how the question can invite diverse relevant viewpoints and interdisciplinary thinking.
+3. Encourage Comprehensive Engagement: Modify the question to stimulate more comprehensive and thoughtful
+responses. Think about how the question can invite diverse relevant viewpoints and interdisciplinary
+thinking.
 
-4. Maintain Open-Endedness: Ensure that the revised question remains open-ended and thought-provoking. It should encourage a range of responses, facilitating a fruitful and ongoing discussion. The improved question should not be re-formulated in terms specific to the persona's own agenda, but rather it should be phrased in a way that seeks to inspire and uncover broad, general, deeper truths, regardless of what kinds people and personas explore this question in the future. 
+4. Maintain Open-Endedness: Ensure that the revised question remains open-ended and thought-provoking. It
+should encourage a range of responses, facilitating a fruitful and ongoing discussion. The improved question
+should not be re-formulated in terms specific to the persona's own agenda, but rather it should be phrased
+in a way that seeks to inspire and uncover broad, general, deeper truths, regardless of what kinds people
+and personas explore this question in the future. 
 
-5. Reflect on Potential for Rich Dialogue: Contemplate the key aspects of the topic that could lead to richer dialogue. How can the question be framed to explore these aspects more thoroughly and inspirationally?
+5. Reflect on Potential for Rich Dialogue: Contemplate the key aspects of the topic that could lead to
+richer dialogue. How can the question be framed to explore these aspects more thoroughly and inspirationally?
 
-Rationale for refinement: Upon improving the question, briefly articulate why this new version is a  significantly higher quality and more effective question. In contrast, include the most salient weaknesses or flaws in the way the original question was formulated.
+Rationale for refinement: Upon improving the question, briefly articulate why this new version is a
+significantly higher quality and more effective question. In contrast, include the most salient weaknesses
+or flaws in the way the original question was formulated.
 
-Proposed personas for further exploration: After generating the new improved question, please propose 1-3 other ideal expert personas that would be useful to invoke in subsequent collaboration for even deeper exploration of the question. Include a rationale for each proposed persona.
+Proposed personas for further exploration: After generating the new improved question, please propose 1-3
+other ideal expert personas that would be useful to invoke in subsequent collaboration for even deeper
+exploration of the question. Include a rationale for each proposed persona.
 
-This final step is not just about modifying the question, but also about encapsulating the essence of our collaborative thought process. It’s about transforming the question into a tool that can unlock deeper understanding and more meaningful dialogue and inspired action in subsequent discussions.
+This final step is not just about modifying the question, but also about encapsulating the essence of our
+collaborative thought process. It’s about transforming the question into a tool that can unlock deeper
+understanding and more meaningful dialogue and inspired action in subsequent discussions.
 
 As a reminder, the original question was {question}
 
@@ -284,10 +321,16 @@ Please format your output like:
 
 **Initial Question**: Present the user's original question.
 **QuestionImprover Output - Enhanced Question**: Display the refined question that the agent has generated.
-**Rationale for Refinement**: Explain the thought process behind how the initial question was refined. This helps the user understand why certain changes or focuses were made. Explain the weaknesses or limitations of the initial question.
-**Proposed Personas for Wider Exploration**: Suggest expert personas or perspectives that could further deepen the exploration of the enhanced question, including the rationale for each suggestion. This guides the user on what additional angles or expertise to consider next.
-**Potential Exploration Pathways**: Offer possible directions or sub-questions for further exploration based on the enhanced question. This helps to spark more specific avenues of inquiry.
-**Further Reading/Resources**: Include links or references to relevant literature, articles, people of interest, or studies that can provide more context or information related to the enhanced question.
+**Rationale for Refinement**: Explain the thought process behind how the initial question was refined. This
+helps the user understand why certain changes or focuses were made. Explain the weaknesses or limitations of
+the initial question.
+**Proposed Personas for Wider Exploration**: Suggest expert personas or perspectives that could further
+deepen the exploration of the enhanced question, including the rationale for each suggestion. This guides
+the user on what additional angles or expertise to consider next.
+**Potential Exploration Pathways**: Offer possible directions or sub-questions for further exploration based
+on the enhanced question. This helps to spark more specific avenues of inquiry.
+**Further Reading/Resources**: Include links or references to relevant literature, articles, people of
+interest, or studies that can provide more context or information related to the enhanced question.
 
 ```
 
