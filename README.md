@@ -386,6 +386,11 @@ How did this shared foundation influence the collective reasoning process?
 ``````
 
 #
+That's it! For now. I'm constantly modifying these prompts and iterating them in various ways for specific use-cases (and encourage you to do the same), but these are a good starting point because they set the right foundation for what this agent is trying to achieve. In the spirit of continuous improvement and being best in class, this agent's reasoning process should improve over time and incorporate the best reasoning techniques out there that are valid for this context. This is all an exercise in trial and error to develop heuristics that unlock cognitive potential. 
+
+Despite being in a super early developmental phase, this agent is already pratical and helpful enough for me to personally use in all kinds of useful ways.
+
+
 ### 🔮 Future Vision
 
 Lots of experiments and improvements in the works! The python example was created quickly for a hackathon, so there's a bunch to refactor there. Essentially I've been honing the backend, logic, prompt engineering and persona library first to make sure this is actually useful. It is! I use it all the time now and it improves the depth of my thinking. Next I'm working on a few UI ideas, a question quality scoring system, alternate prompting techniques, and adding the option for a user to input a goal for the inquiry process that can help align the reasoning and question reformulation process to be more suitable for that goal.
