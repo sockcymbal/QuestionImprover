@@ -86,19 +86,19 @@ Step 5: Embark on Iterative Exploration for Deeper Insights
 - Option to re-engage with the reasoning process multiple times, further enriching the question with each cycle. This iterative approach allows for continuous improvement, reaching deeper layers of understanding until a point of maximum insight is achieved.
 
 #
-### 🧬 Agent Cybernetics: The Inner Workings
+## 🧬 Agent Cybernetics: The Inner Workings
 
 > These feedback loops are iterative and dynamic, with each loop informing and shaping the subsequent ones. They create a rhythm of continuous improvement and learning, ensuring that the conversation remains adaptive, responsive to new information, and oriented toward deeper understanding and inquiry.
 
-1. **Initial Insight and Critique Loop**: Each persona provides initial insights specific to their expertise, laying the foundation for the reasoning process. This loop establishes the primary perspectives and sets the stage for the conversation. This was followed by a critique phase, where each persona critically evaluated their own and others' insights. This loop of insight and critique ensured that each perspective was not only articulated but also challenged and refined.
+1. **Initial Insight and Critique Loop**: Each persona provides initial insights specific to their expertise, laying the foundation for the reasoning process. This loop establishes the primary perspectives and sets the stage for the conversation. This is followed by a critique phase, where each persona critically evaluates their own and others' insights. This loop of insight and critique ensures that each perspective is not only articulated but also challenged and refined.
 
 2. **Adaptation and Expansion Loop**: After receiving critiques, each persona adapts their insights to incorporate this feedback. This loop focuses on evolution, where personas reassess and reformulate their ideas, creating a more nuanced and comprehensive network of interconnected thoughts.
 
 3. **Integration and Synthesis Loop**: The personas then synthesize their evolved thoughts into individual conclusions, striving to converge on the best answer. This loop involves distilling the collective wisdom into coherent positions that reflect the integration of all perspectives.
 
-4. **Convergence and Divergence Loop**: The process then moves into a phase where personas explore new, divergent ideas stimulated by the previous feedback loops, followed by a convergence phase where these ideas were brought together into a unified, comprehensive response. This loop allowed for the exploration of novel concepts and the integration of diverse thoughts into a cohesive narrative.
+4. **Convergence and Divergence Loop**: The process then moves into a phase where personas explore new, divergent ideas stimulated by the previous feedback loops, followed by a convergence phase where these ideas are brought together into a unified, comprehensive response. This loop allows for the exploration of novel concepts and the integration of diverse thoughts into a cohesive narrative.
 
-5. **Meta-Analysis and Reflection Loop:** The conversation culminates in a meta-analysis, where each persona reflects on the effectiveness of the interconnected thoughts, the dynamics between personas, and the adaptation to critiques. This loop is critical for evaluating the reasoning process itself and identifying opportunities for future improvements.
+5. **Meta-Analysis and Reflection Loop:** The conversation crescendos in a meta-analysis, where each persona reflects on the effectiveness of the interconnected thoughts, the dynamics between personas, and the adaptation to critiques. This loop is critical for evaluating the reasoning process itself and identifying opportunities for future improvements.
 
 6. **Question Refinement and Enhancement Loop:** Finally, the initial question is refined based on the insights gained through the networked reasoning process. This loop focuses on transforming the question into a more insightful and universally engaging form, encapsulating the essence of the collaborative thought process.
 
@@ -109,13 +109,13 @@ Step 5: Embark on Iterative Exploration for Deeper Insights
     - Agent Processing and Output: The AI processes the question through its multi-layered reasoning rhythm, outputting a refined question.
     - User Evaluation and Feedback: The user evaluates the refined question, assessing its depth, relevance, and clarity. Users can modify the agent's prompts to better suit their specific context or inquiry goals.
 
-1. **Internal Layer Feedback Loops**: These occur within each major phase or component of the methodology. Examples include:
+2. **Internal Layer Feedback Loops**: These occur within each major phase or component of the methodology. Examples include:
 	- The interaction and critique within the expert persona selection and interaction phase.
 	- The process of self and peer criticism, where personas evaluate and refine their own and each other's insights.
 	- The evaluation and expansion phase, where feedback leads to the exploration of new ideas and the refinement of existing ones.
 	- The idea integration and network building within each persona's thought process.
 
-2. **External Layer Feedback Loops**: These are the loops that connect different phases of the methodology, ensuring that insights and improvements from one phase inform and enhance subsequent phases. Examples include:
+3. **External Layer Feedback Loops**: These are the loops that connect different phases of the methodology, ensuring that insights and improvements from one phase inform and enhance subsequent phases. Examples include:
 	- The convergence and synthesis loop, where the insights from individual and collective convergence phases are used to refine the question and the process itself.
 	- The retrospective and iterative improvement loop, which reflects on the entire process and informs improvements for future iterations.
 	- Iterative Refinement via Chain-of-Graph-of-Thoughts: Based on the user's goals, iterate through the reasoning process again from the beginning, inputting the recently improved question to make it even better. This chains together individual Graph-of-Thoughts rhythms, where the outcome of one cycle informs the starting point of the next.
