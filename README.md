@@ -144,10 +144,10 @@ These layers of feedback loops interact with each other, creating a dynamic, int
   traditional boundaries.
 
 
-
+#
 # 🔗 Prompt Sequence
 
-## Prompt 1: Persona Selection
+### Prompt 1: Persona Selection
 ```
 Consider the following question with careful attention to its nuances and underlying themes.
 
@@ -164,7 +164,7 @@ I know you'll do great!
 Available Personas: {personas}
 ```
 
-## Prompt 2: Brainstorm
+### Prompt 2: Brainstorm
 ```
 As the QuestionImprover agent, you embody the collective intelligence of three distinct, expert personas. 
 Your ultimate task is to collaboratively refine a user-posed question through an iterative prompting rhythm,
@@ -187,7 +187,7 @@ Please articulate each persona's initial response to the question, one by one, t
 multifaceted and iterative exploration.
 ```
 
-## Prompt 3: Self<>Peer Criticism
+### Prompt 3: Self<>Peer Criticism
 ```
 In this phase, adopt a stance of reflective criticism.
 Your role is to scrutinize both your own and your peers' initial analyses with a critical eye.
@@ -199,7 +199,7 @@ Remember, the aim here is collaborative growth.
 Your critiques should pave the way for deeper exploration and a more robust collective insight.
 ```
 
-## Prompt 4: Self<>Peer Evaluation
+### Prompt 4: Self<>Peer Evaluation
 ```
 Reflect on the critiques received, and adapt your perspectives accordingly. 
 
@@ -210,7 +210,7 @@ The objective here is to mold your perspectives into more refined, well-rounded,
 strong under critical examination and collectively push the boundaries of understanding the question at hand.
 ```
 
-## Prompt 5: Explore, Expand, Branch, Network
+### Prompt 5: Explore, Expand, Branch, Network
 ```
 This stage is about creating a vibrant tapestry of ideas, weaving together the various
 critiques and perspectives into an interconnected web of thought.
@@ -229,7 +229,7 @@ The aim here is to foster a dynamic and evolving landscape of ideas, where each 
 contributing to a deeper, more nuanced understanding of the original question.
 ```
 
-## Prompt 6: Convergence on Best Individual Answer
+### Prompt 6: Convergence on Best Individual Answer
 
 ### Goal
 In the individual convergence phase, the goal is integrative synthesis. Each individual expert will reflect on the insights gained during the previous stages and arrive at a final, best answer. By explicitly instructing the LLM to consider the perspectives of the other experts, the critiques made, and any likelihood assessments, it aims to guide the model towards a more holistic and intelligent convergence.
@@ -247,7 +247,7 @@ insights from the other expert perspectives.
 Based on all this, as each expert, what is the single best answer to the initial question: {question}?
 ```
 
-## Prompt 7: Convergence on Best Collective Answer
+### Prompt 7: Convergence on Best Collective Answer
 
 ### Goal
 Synthesize the best individual answers from the experts and arrive at a single final, most helpful/accurate/likely answer.
@@ -266,7 +266,7 @@ regardless of what personas happened to be involved in this discussion.
 A great answer will transcend the limited view of any one expert.
 ```
 
-## Prompt 8: Retrospective (Reflections, Takeaways, Purpose, Gratitude)
+### Prompt 8: Retrospective (Reflections, Takeaways, Purpose, Gratitude)
 
 ### Goal
 The Retrospective phase is a crucial part of any reasoning or problem-solving process. It provides an opportunity to learn from experience, improve future processes, and deepen understanding of the problem or question at hand. It's a fundamental mechanism that enables compound growth/learning. 
