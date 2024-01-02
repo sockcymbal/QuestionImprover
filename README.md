@@ -105,7 +105,7 @@ Step 5: Embark on Iterative Exploration for Deeper Insights
 There are three primary layers of feedback loops:
 
 1. **User Input and Response Feedback Loop**:
-    - Initial Input: The user starts by posing a complex question to the system.
+    - Initial Input: The user starts by posing a question to the system.
     - Agent Processing and Output: The AI processes the question through its multi-layered reasoning rhythm, outputting a refined question.
     - User Evaluation and Feedback: The user evaluates the refined question, assessing its depth, relevance, and clarity. Users can modify the agent's prompts to better suit their specific context or inquiry goals.
 
